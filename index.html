@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web Fun</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container"></div>
+    <header class="header">
+        <h1 class="logo">
+            <a href="#section-0" class="logo__link js-scroll-link">WEB FUN</a>
+        </h1>
+        <nav class="navigation">
+            <ul class="navigation__items">
+                <li class="navigation__item">
+                    <a href="#section-1" class="navigation__link js-scroll-link">о нас</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#section-2" class="navigation__link js-scroll-link">статьи</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#section-3" class="navigation__link js-scroll-link">контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content js-scroll-content">
+        <section id="section-0" class="section section_0 js-scroll-item">
+            <div id="inserthere"><svg id="poly" width="90px" height="100px"><polygon points="45,10 10,30 10,70 45,90 80,70 80,30 45,10" stroke="black" stroke-width="10" fill="none"></polygon></svg></div>
+            <img src="img/logotransparent.png" alt="logo" class="section_0__logo" />
+        </section>
+        <section id="section-1" class="section section_1 js-scroll-item">
+            <h2 class="section__title">О нас</h2>
+            <article class="section__article">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam natus nihil. Sed, quibusdam magni placeat quo saepe similique porro optio nihil itaque. Modi sequi et quaerat illo quae autem!Dolor explicabo ut, nihil modi repudiandae
+                    assumenda a cumque quos dolorem veniam excepturi qui, voluptates velit fugiat, deserunt asperiores minus voluptate hic debitis. Corrupti aliquid laborum explicabo nobis expedita eaque!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam natus nihil. Sed, quibusdam magni placeat quo saepe similique porro optio nihil itaque. Modi sequi et quaerat illo quae autem!Dolor explicabo ut, nihil modi repudiandae
+                    assumenda a cumque quos dolorem veniam excepturi qui, voluptates velit fugiat, deserunt asperiores minus voluptate hic debitis. Corrupti aliquid laborum explicabo nobis expedita eaque!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam natus nihil. Sed, quibusdam magni placeat quo saepe similique porro optio nihil itaque. Modi sequi et quaerat illo quae autem!Dolor explicabo ut, nihil modi repudiandae
+                    assumenda a cumque quos dolorem veniam excepturi qui, voluptates velit fugiat, deserunt asperiores minus voluptate hic debitis. Corrupti aliquid laborum explicabo nobis expedita eaque!</p>
+            </article>
+        </section>
+        <section id="section-2" class="section section_2 js-scroll-item">
+            <h2 class="section__title">Статьи</h2>
+            <article class="articles">
+
+            </article>
+        </section>
+        <section id="section-?" class="section section_3 js-scroll-item">
+            <!-- галерея -->
+            <div id="galery">
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+            </div>
+        </section>
+        <section id="section-3" class="section section_3 js-scroll-item">
+            <!-- пока так, не знаю еще, как красивше карту разместить -->
+            <article id="map" class="section__map"></article>
+        </section>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/handlebars-v4.0.11.js"></script>
+</body>
+
+</html>
