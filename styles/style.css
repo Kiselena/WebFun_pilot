@@ -85,7 +85,7 @@ body {
     width: 100%;
     height: 100%;
     align-items: center;
-    padding: 5%;
+    padding: 10% 5% 5% 5%;
 }
 
 .section_0 {
@@ -216,14 +216,10 @@ article {
 }
 
 .section__title {
-    /* position: absolute;
-    top: 25%;
-    left: 50%; */
     margin: 0;
     padding-top: 10%;
     font-size: 4rem;
     text-align: center;
-    /* transform: translate(50%, 50%); */
 }
 
 .section__map {
@@ -286,42 +282,37 @@ h1 {
 }
 
 .login-form {
-    z-index: 13;
-    flex: 1;
-    max-width: 390px;
-    /* background: url("https://cdn.stocksnap.io/img-thumbs/960w/LBYK1XTHFC.jpg") no-repeat center; */
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    color: #fff;
-    font-size: 14px;
-}
-
-.login-form__wrapper {
+    background-color: #fff;
+    max-width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: linear-gradient( 45deg, rgba(243, 220, 251, 1) 0%, rgba(0, 0, 0, 0.6) 80%);
-    border-radius: 10px;
+    padding: 15px 0;
+    box-shadow: 7px 7px 0 0 #121018;
+    color: #121018;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .login-form__content {
-    flex: 1 1 auto;
     display: flex;
+    flex: 1 1 auto;
     flex-direction: column-reverse;
-    padding: 10px;
-    width: 80%;
+    padding: 10px 15px;
+    width: 88%;
 }
 
 .login-form__content:last-child {
     display: inline-block;
-    padding: 20px;
+    padding-top: 35px;
 }
 
 .login-form__title {
-    font-size: 42px;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 52px;
+    margin-bottom: 25px;
 }
 
 .login-form__title:first-letter {
@@ -329,53 +320,34 @@ h1 {
 }
 
 .login-form__input {
+    align-self: center;
     width: 97%;
-    height: 40px;
+    padding: 10px;
     padding-left: 3%;
-    box-sizing: border-box;
-    border: none;
+    border: 3px solid #121018;
     border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #679fe4;
     transition: all 0.3s;
 }
 
-.login-form__input::placeholder {
-    color: #679fe4;
-}
-
-.login-form__input:hover {
-    box-shadow: 0 0 0 0.5px #f7df1d, 0px 1px 2px rgba(0, 0, 0, 0.1) inset;
-}
-
-.login-form__input:focus {
-    box-shadow: 0 0 0 1px #f7df1d inset, 0 2px 2px rgba(0, 0, 0, 0.4) inset, 0 0 4px rgba(254, 254, 254, 0.5);
-}
-
 .login-form__label {
+    font-weight: bold;
     line-height: 24px;
 }
 
-.login-form__label::before {
-    transition: opacity 0.5s, visibility 0s linear 0.9s;
-    opacity: 0;
-}
-
-.login-form__input:valid+.login-form__label::after {
-    content: "    \2714";
-    color: #ffffff;
-    opacity: 0.9;
+.login-form__input:active {
+    box-shadow: 0 0 0 1px #f7df1d inset, 0 2px 2px rgba(0, 0, 0, 0.4) inset
 }
 
 .login-form__button {
-    width: 97%;
-    height: 40px;
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
+    border-radius: 50px;
+    background-color: #f7df1d;
+    color: #121018;
     transition: all 0.2s;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .login-form__button:hover {
@@ -384,9 +356,17 @@ h1 {
 }
 
 .login-form__acception {
-    margin-top: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
     text-align: center;
-    padding: 5px;
+    padding: 0 5px;
+}
+
+.login-form__acception__link {
+    color: #121018;
 }
 
 #switch,

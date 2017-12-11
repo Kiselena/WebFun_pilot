@@ -28,27 +28,25 @@
             </ul>
         </nav>
     </header>
-
     <div class="content js-scroll-content">
         <section id="section-0" class="section section_0 js-scroll-item">
             <form id="requestForm" class="login-form">
-                <div class="login-form__wrapper">
-                    <p class="login-form__title">Принять участие</p>
-                    <div class="login-form__content">
-                        <input type="text" class="login-form__input" title="Как Вас называть?" name="fio" placeholder="Как к Вам обращаться?" required tabindex="1">
-                    </div>
-                    <div class="login-form__content">
-                        <input type="email" class="login-form__input" name="email" placeholder="Email для связи" tabindex="2" title="Email для связи">
-                    </div>
-                    <div class="login-form__content">
-                        <input type="tel" class="login-form__input" name="phone" placeholder="Или номер телефона" tabindex="3" title="Или номер телефона">
-                    </div>
-                    <div class="login-form__content">
-                        <input type="button" class="login-form__button" id="submitButton" value="Отправить">
-                        <div class="login-form__acception">
-                            Нажав на кнопку, вы даете согласие на обработку данных и соглашаетесь с политикой конфиденциальности
+                <p class="login-form__title">Принять участие</p>
+                <div class="login-form__content">
+                    <input type="text" class="login-form__input" title="Как к Вам обращаться?" name="fio" placeholder="" required>
+                    <label for="email" class="login-form__label">Как к Вам обращаться?</label>
+                </div>
+                <div class="login-form__content">
+                    <input type="email" class="login-form__input" name="email" placeholder="" title="Email для связи">
+                    <label for="email" class="login-form__label">Email или телефон :)</label>
+                </div>
+                <div class="login-form__content">
+                    <input type="button" class="login-form__button" id="submitButton" value="Отправить">
+                    <div class="login-form__acception">
+                        Нажав на кнопку, вы даете согласие на обработку данных и соглашаетесь с
+                        <a href="http://www.consultant.ru/document/cons_doc_LAW_61801/4f41fe599ce341751e4e34dc50a4b676674c1416/" class="login-form__acception__link" title="Закон о персональных данных">
+                            политикой конфиденциальности</a>
 
-                        </div>
                     </div>
                 </div>
             </form>
@@ -68,9 +66,17 @@
         <section id="section-2" class="section section_2 js-scroll-item">
             <h2 class="section__title">Статьи</h2>
             <article class="articles">
-                <svg id="backSwitch"><polygon points="10,60 40,35 10,10" stroke="navy" stroke-width="10px" stroke-linejoin="round" fill="navy"><animate attributeName="stroke" from="greenyellow" to="navy" dur="1s" begin="click" fill="freeze" d="left"></animate></polygon></svg>
+                <svg id="backSwitch">
+                    <polygon points="10,60 40,35 10,10" stroke="navy" stroke-width="10px" stroke-linejoin="round" fill="none">
+                        <animate attributeName="stroke" from="greenyellow" to="navy" dur="1s" begin="click" fill="freeze"></animate>
+                    </polygon>
+                </svg>
                 <div id="result"></div>
-                <svg id="switch"><polygon points="10,60 40,35 10,10" stroke="navy" stroke-width="10px" stroke-linejoin="round" fill="navy"><animate attributeName="stroke" from="greenyellow" to="navy" dur="1s" begin="click" fill="freeze" d="right"></animate></polygon></svg>
+                <svg id="switch">
+                    <polygon points="10,60 40,35 10,10" stroke="navy" stroke-width="10px" stroke-linejoin="round" fill="none">
+                        <animate attributeName="stroke" from="greenyellow" to="navy" dur="1s" begin="click" fill="freeze"></animate>
+                    </polygon>
+                </svg>
             </article>
         </section>
         <section id="section-?" class="section section_3 js-scroll-item">
