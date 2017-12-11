@@ -90,14 +90,13 @@ body {
 
 .section_0 {
     background-color: #f7df1d;
+    display: flex;
+    justify-content: space-between;
 }
 
 .section_0__logo {
-    position: absolute;
-    width: 414px;
-    height: 500px;
-    right: 5%;
-    bottom: 1%;
+    max-width: 390px;
+    flex: 1;
 }
 
 .section_1 {
@@ -112,6 +111,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    min-height: 50vh;
 }
 
 article {
@@ -287,9 +287,7 @@ h1 {
 
 .login-form {
     z-index: 13;
-    /* position: absolute; */
-    top: 15%;
-    left: 7%;
+    flex: 1;
     max-width: 390px;
     /* background: url("https://cdn.stocksnap.io/img-thumbs/960w/LBYK1XTHFC.jpg") no-repeat center; */
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.2);
