@@ -287,7 +287,7 @@ h1 {
 
 .login-form {
     z-index: 13;
-    position: absolute;
+    /* position: absolute; */
     top: 15%;
     left: 7%;
     max-width: 390px;
@@ -389,4 +389,20 @@ h1 {
     margin-top: 10px;
     text-align: center;
     padding: 5px;
+}
+
+#switch,
+#backSwitch {
+    flex: 1;
+    height: 70px;
+    cursor: pointer;
+}
+
+#backSwitch {
+    transform: rotate(180deg);
+}
+
+#result {
+    flex: 3;
+    padding: 0 10px;
 }

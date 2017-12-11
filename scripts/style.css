@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #abc277
+}
+
+.container {
+    display: flex;
+    width: 40%;
+    margin: auto;
+}
+
+#result {
+    width: 70%;
+}
+
+#switch,
+#backSwitch {
+    height: 70px;
+    cursor: pointer;
+    animation: clickSwitch 1s infinite alternate;
+}
+
+#backSwitch {
+    transform: rotate(180deg);
+}
