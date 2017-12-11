@@ -96,8 +96,8 @@ body {
   position: absolute;
   width: 414px;
   height: 500px;
-  right: 5%;
-  bottom: 1%;
+  right: 15%;
+  bottom: 4%;
 }
 
 .section_1 {
@@ -288,7 +288,7 @@ h1 {
 .login-form {
   background-color: #fff;
   margin-top: 4%;
-  margin-left: 4%;
+  margin-left: 12%;
   max-width: 380px;
   display: flex;
   flex-direction: column;
