@@ -371,6 +371,10 @@ h1 {
   padding: 0 5px;
 }
 
+.login-form__acception__link {
+  color: #121018;
+}
+
 #switch,
 #backSwitch {
   flex: 1;
