@@ -9,6 +9,7 @@
     let moveSection = index => {
         let positionTop = (-index * 100) + '%';
         container.style.top = positionTop;
+        console.log(container.style.top);
     };
 
     let setLocation = index => window.location = `#${items[index].id}`;
@@ -55,21 +56,22 @@
     });
 
     function moveByKeys(e) {
-
+        let direction = event.deltaY;
         switch (e.keyCode) {
 
             case 40: // если нажата клавиша вниз
-                if (scroll)
+                if (scroll && currentItemIndex < itemsNumber)
                     currentItemIndex++;
                 moveSection(currentItemIndex);
+                scroll = false;
                 break;
             case 38: // если нажата клавиша вверх
-                if (scroll)
+                if (scroll && currentItemIndex > 0)
                     currentItemIndex--;
                 moveSection(currentItemIndex);
+                scroll = false;
                 break;
         }
-        scroll = false;
     }
 
     addEventListener("keydown", moveByKeys);
