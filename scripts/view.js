@@ -33,6 +33,6 @@ let View = {
                 p.innerText = allValues.join(', ');
             }
 
-        }); // код ужасен, но это эпик вин
+        });
     }
 }
