@@ -56,7 +56,6 @@
     });
 
     function moveByKeys(e) {
-        let direction = event.deltaY;
         switch (e.keyCode) {
 
             case 40: // если нажата клавиша вниз

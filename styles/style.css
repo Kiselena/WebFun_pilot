@@ -195,6 +195,11 @@ article {
     background-position: center;
     background-size: cover;
     cursor: pointer;
+    filter: grayscale(70%);
+}
+
+#galery .image:hover {
+    filter: none;
 }
 
 #galery .active {
@@ -204,6 +209,7 @@ article {
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
+    z-index: 100;
 }
 
 #galery .image:nth-child(1) {
