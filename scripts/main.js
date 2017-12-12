@@ -13,7 +13,7 @@
 
     let setLocation = index => window.location = `#${items[index].id}`;
 
-    // Set strart params
+    // Set start params
     container.style.top = 0;
     setLocation(currentItemIndex);
     itemsNumber--;
@@ -53,6 +53,26 @@
         }
 
     });
+
+    function moveByKeys(e) {
+
+        switch (e.keyCode) {
+
+            case 40: // если нажата клавиша вниз
+                if (scroll)
+                    currentItemIndex++;
+                moveSection(currentItemIndex);
+                break;
+            case 38: // если нажата клавиша вверх
+                if (scroll)
+                    currentItemIndex--;
+                moveSection(currentItemIndex);
+                break;
+        }
+        scroll = false;
+    }
+
+    addEventListener("keydown", moveByKeys);
 
     container.addEventListener('transitionend', () => {
         setTimeout(() => scroll = true, 300);
