@@ -82,15 +82,15 @@
 
 })();
 
-let galery = document.querySelector('#galery');
-for (let i = 0; i < galery.children.length; i++) {
-    galery.children[i].addEventListener('click', function(e) {
-        for (let prop of galery.children) {
-            if (prop != galery.children[i]) { prop.classList.remove('active'); }
-        }
-        (this.classList.contains('active')) ? this.classList.remove('active'): this.classList.add('active');
-    });
-}
+// let galery = document.querySelector('#galery');
+// for (let i = 0; i < galery.children.length; i++) {
+//     galery.children[i].addEventListener('click', function(e) {
+//         for (let prop of galery.children) {
+//             if (prop != galery.children[i]) { prop.classList.remove('active'); }
+//         }
+//         (this.classList.contains('active')) ? this.classList.remove('active'): this.classList.add('active');
+//     });
+// }
 
 ymaps.ready(init);
 var myMap,

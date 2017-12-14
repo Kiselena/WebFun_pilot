@@ -20,3 +20,5 @@ let articles = [{
         }
     }
 ]
+
+let imageSrc = ['https://pp.userapi.com/c824501/v824501913/2af06/7NOiMA8f9KA.jpg', 'https://pp.userapi.com/c824501/v824501913/2aede/PXD2W0IUT3k.jpg', 'https://pp.userapi.com/c824501/v824501913/2aee8/9kYdpn86k8s.jpg', 'https://pp.userapi.com/c824501/v824501913/2aed4/7GJWvGzg2Vk.jpg'];

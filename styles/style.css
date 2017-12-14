@@ -173,35 +173,38 @@ article {
 }
 
 .section_2 {
-    background-color: #f7df1d;
+    /* background-color: #f7df1d; */
     color: black;
 }
 
 #galery {
-    display: grid;
+    /* display: grid; */
     width: 100%;
     height: inherit;
     margin: auto;
     align-self: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
+    /* grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px; */
 }
 
 #galery .image {
+    height: inherit;
     border: 3px solid white;
     border-radius: 8px;
-    /* box-shadow: 5px 5px 5px white; */
+    background-image: url("https://pp.userapi.com/c824501/v824501913/2af06/7NOiMA8f9KA.jpg");
     background-position: center;
     background-size: cover;
     cursor: pointer;
-    filter: grayscale(70%);
+    /* filter: grayscale(70%); */
 }
 
-#galery .image:hover {
+
+/* #galery .image:hover {
     filter: none;
-}
+} */
 
+
+/* 
 #galery .active {
     position: absolute;
     width: 90vw;
@@ -210,8 +213,29 @@ article {
     left: 50%;
     top: 50%;
     z-index: 100;
+} */
+
+#sliderBack,
+#sliderNext {
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: silver;
+    border-radius: 50%;
+    box-shadow: gold 0px 0px 10px 10px;
 }
 
+#sliderBack {
+    left: 5%;
+}
+
+#sliderNext {
+    right: 5%;
+}
+
+
+/* 
 #galery .image:nth-child(1) {
     background-image: url("https://pp.userapi.com/c824501/v824501913/2af06/7NOiMA8f9KA.jpg");
 }
@@ -246,10 +270,14 @@ article {
 
 #galery .image:nth-child(9) {
     background-image: url("https://pp.userapi.com/c824501/v824501913/2af06/7NOiMA8f9KA.jpg");
-}
+} */
 
 .section_3 {
     background-color: black;
+}
+
+.section_4 {
+    background-color: gold;
 }
 
 .section__title {
