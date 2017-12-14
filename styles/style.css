@@ -224,6 +224,7 @@ article {
     background-color: silver;
     border-radius: 50%;
     box-shadow: gold 0px 0px 10px 10px;
+    cursor: pointer;
 }
 
 #sliderBack {
