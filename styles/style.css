@@ -76,7 +76,7 @@ body {
     z-index: 100;
     position: fixed;
     display: flex;
-    bottom: 5%;
+    bottom: 1%;
     right: 5%;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.411)
@@ -188,6 +188,7 @@ article {
 }
 
 #galery .image {
+    position: relative;
     height: inherit;
     border: 3px solid white;
     border-radius: 8px;
@@ -218,21 +219,31 @@ article {
 #sliderBack,
 #sliderNext {
     position: absolute;
-    top: 50%;
-    width: 60px;
-    height: 60px;
-    background-color: silver;
-    border-radius: 50%;
-    box-shadow: gold 0px 0px 10px 10px;
+    top: 40%;
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
     cursor: pointer;
 }
 
 #sliderBack {
-    left: 5%;
+    left: -40px;
+    border-right-color: rgba(255, 255, 255, 0.650);
+    border-left: 0;
+}
+
+#sliderBack:hover {
+    border-right-color: white;
 }
 
 #sliderNext {
-    right: 5%;
+    right: -40px;
+    border-left-color: rgba(255, 255, 255, 0.650);
+    border-right: 0;
+}
+
+#sliderNext:hover {
+    border-left-color: white;
 }
 
 
