@@ -9,11 +9,12 @@
     let moveSection = index => {
         let positionTop = (-index * 100) + '%';
         container.style.top = positionTop;
+        console.log(container.style.top);
     };
 
     let setLocation = index => window.location = `#${items[index].id}`;
 
-    // Set strart params
+    // Set start params
     container.style.top = 0;
     setLocation(currentItemIndex);
     itemsNumber--;
@@ -54,6 +55,26 @@
 
     });
 
+    function moveByKeys(e) {
+        switch (e.keyCode) {
+
+            case 40: // если нажата клавиша вниз
+                if (scroll && currentItemIndex < itemsNumber)
+                    currentItemIndex++;
+                moveSection(currentItemIndex);
+                scroll = false;
+                break;
+            case 38: // если нажата клавиша вверх
+                if (scroll && currentItemIndex > 0)
+                    currentItemIndex--;
+                moveSection(currentItemIndex);
+                scroll = false;
+                break;
+        }
+    }
+
+    addEventListener("keydown", moveByKeys);
+
     container.addEventListener('transitionend', () => {
         setTimeout(() => scroll = true, 300);
         setLocation(currentItemIndex);
@@ -61,15 +82,15 @@
 
 })();
 
-let galery = document.querySelector('#galery');
-for (let i = 0; i < galery.children.length; i++) {
-    galery.children[i].addEventListener('click', function(e) {
-        for (let prop of galery.children) {
-            if (prop != galery.children[i]) { prop.classList.remove('active'); }
-        }
-        (this.classList.contains('active')) ? this.classList.remove('active'): this.classList.add('active');
-    });
-}
+// let galery = document.querySelector('#galery');
+// for (let i = 0; i < galery.children.length; i++) {
+//     galery.children[i].addEventListener('click', function(e) {
+//         for (let prop of galery.children) {
+//             if (prop != galery.children[i]) { prop.classList.remove('active'); }
+//         }
+//         (this.classList.contains('active')) ? this.classList.remove('active'): this.classList.add('active');
+//     });
+// }
 
 ymaps.ready(init);
 var myMap,
