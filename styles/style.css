@@ -87,7 +87,9 @@ body {
     width: 56px;
     height: 60px;
     margin-right: 15px;
-    text-indent: -6000px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background-image: url('../img/social-media.png');
     background-size: cover;
     background-position: 55px 0px;
@@ -98,7 +100,9 @@ body {
     flex: 1;
     width: 55px;
     height: 60px;
-    text-indent: -6000px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     background-image: url('../img/social-media.png');
     background-size: cover;
     background-position: 0px 0px;
@@ -185,7 +189,7 @@ article {
     color: black;
 }
 
-#galery {
+.galery {
     /* display: grid; */
     width: 100%;
     height: inherit;
@@ -195,7 +199,7 @@ article {
     grid-gap: 10px; */
 }
 
-#galery .image {
+.galery__image {
     position: relative;
     height: inherit;
     border: 3px solid white;
@@ -224,8 +228,7 @@ article {
     z-index: 100;
 } */
 
-#sliderBack,
-#sliderNext {
+.galery__image__button {
     position: absolute;
     top: 40%;
     width: 0;
@@ -234,23 +237,23 @@ article {
     cursor: pointer;
 }
 
-#sliderBack {
+.galery__image__left {
     left: -40px;
     border-right-color: rgba(255, 255, 255, 0.650);
     border-left: 0;
 }
 
-#sliderBack:hover {
+.galery__image__left:hover {
     border-right-color: white;
 }
 
-#sliderNext {
+.galery__image__right {
     right: -40px;
     border-left-color: rgba(255, 255, 255, 0.650);
     border-right: 0;
 }
 
-#sliderNext:hover {
+.galery__image__right:hover {
     border-left-color: white;
 }
 
@@ -455,18 +458,17 @@ h1 {
     color: #121018;
 }
 
-#switch,
-#backSwitch {
+.articles__button {
     flex: 1;
     height: 70px;
     cursor: pointer;
 }
 
-#backSwitch {
+.articles__back-switch {
     transform: rotate(180deg);
 }
 
-#result {
+.articles__content {
     flex: 3;
     padding: 0 10px;
 }

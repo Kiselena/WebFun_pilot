@@ -22,7 +22,7 @@ cli(articles);
 
 let sliderNext = document.getElementById('sliderNext');
 let sliderBack = document.getElementById('sliderBack');
-let image = document.querySelector('#galery .image');
+let image = document.querySelector('.galery__image');
 
 function slider() {
     let i = 0;

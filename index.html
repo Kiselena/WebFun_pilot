@@ -70,13 +70,13 @@
         <section id="section-2" class="section section_2 js-scroll-item">
             <h2 class="section__title">Статьи</h2>
             <article class="articles">
-                <svg id="backSwitch">
+                <svg id="backSwitch" class="articles__button articles__back-switch">
                     <polygon points="10,60 40,35 10,10" stroke="navy" stroke-width="10px" stroke-linejoin="round" fill="none">
                         <animate attributeName="stroke" from="greenyellow" to="navy" dur="1s" begin="click" fill="freeze"></animate>
                     </polygon>
                 </svg>
-                <div id="result"></div>
-                <svg id="switch">
+                <div id="result" class="articles__content"></div>
+                <svg id="switch" class="articles__button articles__switch">
                     <polygon points="10,60 40,35 10,10" stroke="navy" stroke-width="10px" stroke-linejoin="round" fill="none">
                         <animate attributeName="stroke" from="greenyellow" to="navy" dur="1s" begin="click" fill="freeze"></animate>
                     </polygon>
@@ -85,10 +85,10 @@
         </section>
         <section id="section-4" class="section section_4 js-scroll-item">
             <!-- галерея -->
-            <div id="galery">
-                <div class="image">
-                    <div id="sliderBack"></div>
-                    <div id="sliderNext"></div>
+            <div id="galery" class="galery">
+                <div class="galery__image">
+                    <div id="sliderBack" class="galery__image__button galery__image__left"></div>
+                    <div id="sliderNext" class="galery__image__button galery__image__right"></div>
                 </div>
             </div>
         </section>
